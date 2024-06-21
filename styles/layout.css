@@ -1,0 +1,32 @@
+#app{
+  display: grid;
+  grid-template-columns: 51.25% 48.75%;
+
+  /*Aqui estou falando que quero usar 100% do espaço, automativamente ira criar uma barra de rolagem, que estou tirando no global.css *{ e overflow hidden */
+  height: 100vh;
+  overflow: hidden;
+}
+
+main{
+  /*para fazer a rolagem auto da lateral do formulario*/
+  overflow: auto;
+  padding: 4rem;
+
+  /*Limitar o tamanho das caixas de textos usando o css nesting*/
+  & .main-container{
+    /*Limita a Coluna*/
+    max-width: 33rem;
+    /*para empurrar para o meio da tela*/
+    margin-left: auto;
+
+  }
+}
+
+aside{
+  background-color: var(--surface-secondary);
+  padding: 4rem;
+
+  & .aside-container{
+    max-width: 31rem;
+  }
+}
