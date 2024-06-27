@@ -1,4 +1,6 @@
 /*Padroniza todos estes campos*/
+@import url(droparea.css);
+
 input, textarea, select{
   appearance: none;
   width: 100%;
@@ -17,7 +19,8 @@ label{
 
 input:focus,
 select:focus,
-textarea:focus{
+textarea:focus
+input[type=date]:focus-within{ /*Algum elemento do inputdate esta em foco*/
   outline: .25rem solid var(--text-secondary);
   border: .125rem solid var(--stroke-hightlight);
   outline-offset: .1px;
