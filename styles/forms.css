@@ -15,3 +15,7 @@ legend{
   margin-bottom: 1.5rem;
 }
 
+/*Quando tiverfield set e anterior a ele 'Lê Asssim'*/
+fieldset + fieldset{
+  margin-top: 3rem;
+}
