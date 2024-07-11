@@ -1,5 +1,10 @@
 .dropzone{
-  border: 1px dashed var(--stroke-default);
+ /* border: 1px dashed var(--stroke-default);*/
+  border: 2px dashed transparent;
+  outline: 1px dashed var(--stroke-default);
+ /*Ajuste para não dar fliquer*/ 
+
+
   border-radius: .25rem;
 
   display: grid;
@@ -25,6 +30,7 @@
 
   /*Se o input tiver em foco ele tambem deixa selecionado*/
   &:hover, &:has(input:focus){
+    outline-width: 0;
     border-width: 2px;
     border-color: var(--stroke-highlight);
     background-color: var(--surface-secondary);
